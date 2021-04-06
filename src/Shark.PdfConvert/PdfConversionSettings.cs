@@ -159,6 +159,10 @@ namespace Shark.PdfConvert
         /// Key value pairs to be used for custom headers
         /// </summary>
         public Dictionary<string, string> CustomHeaders { get; set; } = new Dictionary<string, string>();
+        /// <summary>         
+        /// If specified it enables the right to use local files
+        /// </summary>
+        public bool UseLocalFiles { get; set; } = false;
     }
 
     /// <summary>

@@ -39,6 +39,8 @@
                 if (string.IsNullOrWhiteSpace(config.Title) == false) options.AppendFormat("--title \"{0}\" ", config.Title.Replace("\"", ""));
 
                 if (config.Quiet) options.Append("--quiet ");
+                
+                if (config.UseLocalFiles) options.Append("--enable-local-file-access ");
 
                 //iterate through custom headers
                 foreach (KeyValuePair<string, string> customHeader in config.CustomHeaders)
